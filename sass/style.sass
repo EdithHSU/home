@@ -1,4 +1,4 @@
-$color_orange: #ff6e3a
+$color_orange: #ff6800
 
 *
   font-family: "微軟正黑體"
@@ -11,6 +11,11 @@ $color_orange: #ff6e3a
   // section#section_future
   //   display: block
 body
+  background-image: url(/../image/img_carnival.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  height: 100vh
+  color: #ff6800
   // height: 1000px
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
   font-weight: bold
@@ -25,6 +30,9 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
       color: $color_orange
 section
   padding: 50px 0
+  .row
+    margin-top: 50px
+
 // 01.header.jumbotron設定
 header.jumbotron
   background-image: url(http://www.shuoyangdesign.com/blog/wp-content/uploads/2016/05/20141015153123463-450x300.jpg)
@@ -33,7 +41,7 @@ header.jumbotron
   text-align: center
   margin-bottom: 0
   .container
-    padding: 200px 0
+    padding: 150px 0
     color: white
   hr
     max-width: 50px
@@ -41,6 +49,36 @@ header.jumbotron
   h4
     color: rgba(white,0.5)
     font-weight: normal
+section#welcome
+.background_mask
+  background-color: #ffffffc4
+  height: 90vh
+  width: 80%
+  padding: 30px 100px
+  border: solid 2px #ff6800
+  border-radius: 5px
+.logo
+  background-image: url(/../image/logo.png)
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+  height: 300px
+  width: auto
+.time
+  display: inline-block
+  width: 100%
+  height: auto
+  padding-right: 40px
+  border-right: solid 2px $color_orange
+  text-align: right
+  font-size: 36px
+  font-weight: 900
+  .address
+    margin-top: 10px
+    font-size: 16px
+
+
+
 // 02.section#section_ask設定
 section#section_ask
   background-color: $color_orange
