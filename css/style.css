@@ -56,7 +56,7 @@ header.jumbotron {
   border-radius: 5px; }
 
 .logo {
-  background-image: url("/../Image/logo.png");
+  background-image: url("/../Images/logo.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header.jumbotron {
     width: 80px;
     height: 50px;
     margin-right: 40px;
-    background-image: url("/../Image/plurk.svg");
+    background-image: url("/../Images/plurk.svg");
     background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition-duration: .2s;
@@ -103,9 +103,9 @@ header.jumbotron {
       display: block;
       font-size: 14px; }
   .social .item_email {
-    background-image: url("/../Image/email.svg"); }
+    background-image: url("/../Images/email.svg"); }
   .social .item_new {
-    background-image: url("/../Image/new.svg"); }
+    background-image: url("/../Images/new.svg"); }
 
 .count_down_outline {
   width: 200px;
