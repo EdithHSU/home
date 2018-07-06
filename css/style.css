@@ -80,7 +80,7 @@ header.jumbotron {
 section#section_ask {
   background-color: #ff6800; }
   section#section_ask .col-sm-5.img {
-    background-image: url(https://www.booklife.com.tw/upload_files/booklife/website/g0200021%20-c2.jpg);
+    background-image: url("/../image/img_carnival.jpg");
     height: 350px;
     mix-blend-mode: multiply;
     background-size: cover; }
