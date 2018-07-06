@@ -1,4 +1,5 @@
 $color_orange: #ff6800
+$screen-sm: 768px
 
 *
   font-family: "微軟正黑體"
@@ -56,6 +57,9 @@ section#welcome
   padding: 30px 100px
   border: solid 2px #ff6800
   border-radius: 5px
+  @media (max-width: 768px)
+    width: 100%
+    padding: 30px 0
 .logo
   background-image: url("https://edithhsu.github.io/home/Images/logo.png")
   background-position: center
@@ -63,6 +67,8 @@ section#welcome
   background-repeat: no-repeat
   height: 300px
   width: auto
+  @media(max-width: $screen-sm)
+    height: 378px
 .time
   display: inline-block
   width: 100%
