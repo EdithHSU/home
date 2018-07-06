@@ -56,7 +56,7 @@ header.jumbotron {
   border-radius: 5px; }
 
 .logo {
-  background-image: url("/../Images/logo.png");
+  background-image: url("https://edithhsu.github.io/home/Images/logo.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ header.jumbotron {
 section#section_ask {
   background-color: #ff6800; }
   section#section_ask .col-sm-5.img {
-    background-image: url("/../image/img_carnival.jpg");
+    background-image: url("/../Images/img_carnival.jpg");
     height: 350px;
     mix-blend-mode: multiply;
     background-size: cover; }
