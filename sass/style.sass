@@ -33,6 +33,8 @@ section
   padding: 50px 0
   .row
     margin-top: 60px
+    @media (max-width: 768px)
+      margin-top: 30px
 
 // 01.header.jumbotron設定
 header.jumbotron
@@ -68,7 +70,7 @@ section#welcome
   height: 300px
   width: auto
   @media(max-width: $screen-sm)
-    height: 378px
+    height: 145px
 .time
   display: inline-block
   width: 100%
@@ -78,6 +80,10 @@ section#welcome
   text-align: right
   font-size: 30px
   font-weight: 900
+  @media (max-width: 768px)
+    border-right: 0
+    text-align: center
+    padding-right: 0
   .address
     margin-top: 10px
     font-size: 15px
@@ -86,6 +92,8 @@ section#welcome
   width: 100%
   height: auto
   padding-left: 50px
+  @media (max-width: 768px)
+    padding: 50px 0 0 20vw
   .item
     text-decoration: none
     display: inline-block
@@ -96,9 +104,12 @@ section#welcome
     background-size: contain
     background-repeat: no-repeat
     transition-duration: .2s
+    @media (max-width: 768px)
+      margin-right: 0
     &:hover
       cursor: pointer
       filter: invert(.2) sepia(.8) saturate(5) hue-rotate(325deg)
+
     .word
       color: #5d5d5d
       margin-top: 60px
@@ -124,6 +135,8 @@ section#welcome
   font-size: 18px
   overflow: hidden
   text-align: center
+  @media (max-width: 768px)
+    margin-bottom: 15px
   .count_down
     width: 100%
     height: 100%
