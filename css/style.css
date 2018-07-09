@@ -30,9 +30,10 @@ section {
   padding: 50px 0; }
   section .row {
     margin-top: 60px; }
-    @media (max-width: 768px) {
+    @media (max-width: 984px) {
       section .row {
-        margin-top: 30px; } }
+        margin-top: 30px;
+        margin: 30px 0 0 0; } }
 
 header.jumbotron {
   background-image: url(http://www.shuoyangdesign.com/blog/wp-content/uploads/2016/05/20141015153123463-450x300.jpg);
@@ -56,7 +57,7 @@ header.jumbotron {
   padding: 30px 100px;
   border: solid 2px #1d86ff;
   border-radius: 5px; }
-  @media (max-width: 768px) {
+  @media (max-width: 984px) {
     .background_mask {
       width: 100%;
       padding: 30px 0; } }
@@ -68,7 +69,7 @@ header.jumbotron {
   background-repeat: no-repeat;
   height: 300px;
   width: auto; }
-  @media (max-width: 768px) {
+  @media (max-width: 984px) {
     .logo {
       height: 145px; } }
 
@@ -81,7 +82,7 @@ header.jumbotron {
   text-align: right;
   font-size: 30px;
   font-weight: 900; }
-  @media (max-width: 768px) {
+  @media (max-width: 984px) {
     .time {
       border-right: 0;
       text-align: center;
@@ -90,18 +91,18 @@ header.jumbotron {
     margin-top: 10px;
     font-size: 15px; }
 
-.social {
+.social_outline .social {
   position: relative;
   width: 100%;
   height: auto;
   padding-left: 50px; }
-  @media (max-width: 768px) {
-    .social {
-      padding: 50px 0 0 20vw; } }
-  .social .item {
+  @media (max-width: 984px) {
+    .social_outline .social {
+      padding: 30px 0 0 20vw; } }
+  .social_outline .social .item {
     text-decoration: none;
     display: inline-block;
-    width: 80px;
+    width: 70px;
     height: 50px;
     margin-right: 40px;
     background-image: url("https://edithhsu.github.io/home/Images/plurk.svg");
@@ -110,22 +111,25 @@ header.jumbotron {
     -webkit-transition-duration: .2s;
     -o-transition-duration: .2s;
     transition-duration: .2s; }
-    @media (max-width: 768px) {
-      .social .item {
+    @media (max-width: 984px) {
+      .social_outline .social .item {
         margin-right: 0; } }
-    .social .item:hover {
+    .social_outline .social .item:hover {
       cursor: pointer;
       -webkit-filter: invert(0.2) sepia(0.8) saturate(5) hue-rotate(175deg);
       filter: invert(0.2) sepia(0.8) saturate(5) hue-rotate(175deg); }
-    .social .item .word {
+    .social_outline .social .item .word {
       color: #5d5d5d;
       margin-top: 60px;
       display: block;
-      font-size: 14px; }
-  .social .item_email {
+      font-size: 12px; }
+  .social_outline .social .item_email {
     background-image: url("https://edithhsu.github.io/home/Images/email.svg"); }
-  .social .item_new {
+  .social_outline .social .item_new {
     background-image: url("https://edithhsu.github.io/home/Images/new.svg"); }
+    @media (max-width: 1166px) {
+      .social_outline .social .item_new {
+        margin-top: 50px; } }
 
 .count_down_outline {
   width: 200px;
@@ -140,14 +144,14 @@ header.jumbotron {
   padding: 15px 20px;
   border-radius: 30px;
   margin: 20px 0 80px 0;
-  background: -webkit-gradient(linear, left top, right top, from(#ff6800), to(#d82f9a));
-  background: -webkit-linear-gradient(left, #ff6800 0%, #d82f9a 100%);
-  background: -o-linear-gradient(left, #ff6800 0%, #d82f9a 100%);
-  background: linear-gradient(to right, #ff6800 0%, #d82f9a 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1d86ff), to(#d82f9a));
+  background: -webkit-linear-gradient(left, #1d86ff 0%, #d82f9a 100%);
+  background: -o-linear-gradient(left, #1d86ff 0%, #d82f9a 100%);
+  background: linear-gradient(to right, #1d86ff 0%, #d82f9a 100%);
   font-size: 18px;
   overflow: hidden;
   text-align: center; }
-  @media (max-width: 768px) {
+  @media (max-width: 984px) {
     .count_down_outline {
       margin-bottom: 15px; } }
   .count_down_outline .count_down {

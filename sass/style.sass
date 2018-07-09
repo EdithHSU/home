@@ -32,8 +32,9 @@ section
   padding: 50px 0
   .row
     margin-top: 60px
-    @media (max-width: 768px)
+    @media (max-width: 984px)
       margin-top: 30px
+      margin: 30px 0 0 0
 
 // 01.header.jumbotron設定
 header.jumbotron
@@ -58,7 +59,7 @@ section#welcome
   padding: 30px 100px
   border: solid 2px $color_main
   border-radius: 5px
-  @media (max-width: 768px)
+  @media (max-width: 984px)
     width: 100%
     padding: 30px 0
 .logo
@@ -68,7 +69,7 @@ section#welcome
   background-repeat: no-repeat
   height: 300px
   width: auto
-  @media(max-width: $screen-sm)
+  @media(max-width: 984px)
     height: 145px
 .time
   display: inline-block
@@ -79,45 +80,48 @@ section#welcome
   text-align: right
   font-size: 30px
   font-weight: 900
-  @media (max-width: 768px)
+  @media (max-width: 984px)
     border-right: 0
     text-align: center
     padding-right: 0
   .address
     margin-top: 10px
     font-size: 15px
-.social
-  position: relative
-  width: 100%
-  height: auto
-  padding-left: 50px
-  @media (max-width: 768px)
-    padding: 50px 0 0 20vw
-  .item
-    text-decoration: none
-    display: inline-block
-    width: 80px
-    height: 50px
-    margin-right: 40px
-    background-image: url("https://edithhsu.github.io/home/Images/plurk.svg")
-    background-size: contain
-    background-repeat: no-repeat
-    transition-duration: .2s
-    @media (max-width: 768px)
-      margin-right: 0
-    &:hover
-      cursor: pointer
-      filter: invert(.2) sepia(.8) saturate(5) hue-rotate(175deg)
+.social_outline
+  .social
+    position: relative
+    width: 100%
+    height: auto
+    padding-left: 50px
+    @media (max-width: 984px)
+      padding: 30px 0 0 20vw
+    .item
+      text-decoration: none
+      display: inline-block
+      width: 70px
+      height: 50px
+      margin-right: 40px
+      background-image: url("https://edithhsu.github.io/home/Images/plurk.svg")
+      background-size: contain
+      background-repeat: no-repeat
+      transition-duration: .2s
+      @media (max-width: 984px)
+        margin-right: 0
+      &:hover
+        cursor: pointer
+        filter: invert(.2) sepia(.8) saturate(5) hue-rotate(175deg)
 
-    .word
-      color: #5d5d5d
-      margin-top: 60px
-      display: block
-      font-size: 14px
-  .item_email
-    background-image: url("https://edithhsu.github.io/home/Images/email.svg")
-  .item_new
-    background-image: url("https://edithhsu.github.io/home/Images/new.svg")
+      .word
+        color: #5d5d5d
+        margin-top: 60px
+        display: block
+        font-size: 12px
+    .item_email
+      background-image: url("https://edithhsu.github.io/home/Images/email.svg")
+    .item_new
+      background-image: url("https://edithhsu.github.io/home/Images/new.svg")
+      @media (max-width: 1166px)
+        margin-top: 50px
 
 .count_down_outline
   width: 200px
@@ -130,11 +134,11 @@ section#welcome
   padding: 15px 20px
   border-radius: 30px
   margin: 20px 0 80px 0
-  background: linear-gradient(to right, #ff6800 0%,#d82f9a 100%)
+  background: linear-gradient(to right, #1d86ff 0%,#d82f9a 100%)
   font-size: 18px
   overflow: hidden
   text-align: center
-  @media (max-width: 768px)
+  @media (max-width: 984px)
     margin-bottom: 15px
   .count_down
     width: 100%
