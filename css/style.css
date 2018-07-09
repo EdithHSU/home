@@ -98,7 +98,7 @@ header.jumbotron {
   padding-left: 50px; }
   @media (max-width: 984px) {
     .social_outline .social {
-      padding: 30px 0 0 20vw; } }
+      padding: 30px 0 0 17vw; } }
   .social_outline .social .item {
     text-decoration: none;
     display: inline-block;
@@ -113,6 +113,7 @@ header.jumbotron {
     transition-duration: .2s; }
     @media (max-width: 984px) {
       .social_outline .social .item {
+        width: 32%;
         margin-right: 0; } }
     .social_outline .social .item:hover {
       cursor: pointer;
