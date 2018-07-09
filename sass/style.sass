@@ -1,4 +1,4 @@
-$color_orange: #ff6800
+$color_main: #1d86ff
 $screen-sm: 768px
 
 *
@@ -15,7 +15,7 @@ body
   background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg")
   background-size: cover
   background-repeat: no-repeat
-  color: #ff6800
+  color: $color_main
   // height: 1000px
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
   font-weight: bold
@@ -27,7 +27,7 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-top
     color: white
     transition: 0.5s
     &:hover
-      color: $color_orange
+      color: $color_main
 section
   padding: 50px 0
   .row
@@ -47,7 +47,7 @@ header.jumbotron
     color: white
   hr
     max-width: 50px
-    border: solid 2px $color_orange
+    border: solid 2px $color_main
   h4
     color: rgba(white,0.5)
     font-weight: normal
@@ -56,7 +56,7 @@ section#welcome
   background-color: #ffffffd4
   width: 80%
   padding: 30px 100px
-  border: solid 2px rgba(255, 255, 255, 0.75)
+  border: solid 2px $color_main
   border-radius: 5px
   @media (max-width: 768px)
     width: 100%
@@ -75,7 +75,7 @@ section#welcome
   width: 100%
   height: auto
   padding-right: 40px
-  border-right: solid 2px $color_orange
+  border-right: solid 2px $color_main
   text-align: right
   font-size: 30px
   font-weight: 900
@@ -107,7 +107,7 @@ section#welcome
       margin-right: 0
     &:hover
       cursor: pointer
-      filter: invert(.2) sepia(.8) saturate(5) hue-rotate(325deg)
+      filter: invert(.2) sepia(.8) saturate(5) hue-rotate(175deg)
 
     .word
       color: #5d5d5d
@@ -154,7 +154,7 @@ section#welcome
 
 // 02.section#section_ask設定
 section#section_ask
-  background-color: $color_orange
+  background-color: #1d86ff
   .col-sm-5.img
     background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg")
     height: 350px
@@ -219,4 +219,4 @@ footer.jumbotron
     color: white
   hr
     max-width: 50px
-    border: solid 2px $color_orange
+    border: solid 2px #1d86ff
