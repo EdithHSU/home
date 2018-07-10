@@ -8,6 +8,10 @@ body {
   background-repeat: no-repeat;
   color: #1d86ff; }
 
+a {
+  color: #1d86ff;
+  text-decoration: none; }
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold; }
 
@@ -88,6 +92,7 @@ header.jumbotron {
       text-align: center;
       padding-right: 0; } }
   .time .address {
+    display: block;
     margin-top: 10px;
     font-size: 15px; }
 
@@ -169,6 +174,9 @@ header.jumbotron {
     transition-duration: .2s; }
     .count_down_outline .count_down:hover {
       background-position: -300px center; }
+
+.email_address {
+  text-align: center; }
 
 section#section_ask {
   background-color: #1d86ff; }
