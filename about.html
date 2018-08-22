@@ -27,15 +27,15 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-top">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-menu"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand page-scroll" href="/index.html">FFXV Festival</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-menu"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand page-scroll" href="home/index">FFXV Festival</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/news.html">最新消息</a></li>
-        <li><a href="/about.html">關於茶會</a></li>
-        <li><a href="/join.html">報名茶會</a></li>
-        <li><a href="/activity.html">活動內容</a></li>
-        <li><a href="/staff.html">STAFF</a></li>
+        <li><a href="home/news">最新消息</a></li>
+        <li><a href="home/about">關於茶會</a></li>
+        <li><a href="home/join">報名茶會</a></li>
+        <li><a href="home/activity">活動內容</a></li>
+        <li><a href="home/staff">STAFF</a></li>
       </ul>
     </div>
   </div>
@@ -78,7 +78,7 @@
           <div class="title">茶會資訊</div>
         </div>
         <div class="row">
-          <div class="col-sm-2 col-xs-12"></div>
+          <div class="col-sm-1 col-xs-12"></div>
           <div class="col-sm-4 col-xs-12">
             <div class="content_normal">
               <li>時間：11/24 (六) ｜ 13:00~16:00</li>
@@ -87,24 +87,12 @@
               <li>價錢：650元 / 人</li>
             </div>
           </div>
-          <div class="col-sm-4 col-xs-12">
-            <div id="map"></div>
-            <script>
-              function initMap() {
-                var uluru = {lat: -25.363, lng: 131.044};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 4,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
-              }
-            </script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwd7L4fjLh6_wBPKwchSNRWYfGEehJ7bc&amp;callback=initMap"></script>
+          <div class="col-sm-6 col-xs-12">
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6932591691284!2d121.4568383150647!3d25.010536883983402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a81d1059ec95%3A0x9acc811cc4ac8503!2zU2luZ2xlSW5uIOWWruS6uuaIv-WPsOWMl-mkqO-8iOmjr-W6l-aXhemkqO-8iQ!5e0!3m2!1szh-TW!2stw!4v1534945846547" allowfullscreen="allowfullscreen"></iframe>
+            </div>
           </div>
-          <div class="col-sm-2 col-xs-12"></div>
+          <div class="col-sm-1 col-xs-12"></div>
         </div>
       </div>
     </section>
@@ -126,15 +114,20 @@
     <section id="footer">
       <div class="container">
         <div class="col-sm-6 col-xs-12">
-          <div class="footer_logo">
-            <div class="logo_word">FINALFANTASY XV </div>
-            <div class="logo_word">FESTIVAL</div>
+          <div class="row">
+            <div class="footer_logo">
+              <div class="logo_word">FINALFANTASY XV </div>
+              <div class="logo_word">FESTIVAL</div>
+            </div>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12">
-          <div class="footer_icon"></div>
-          <div class="footer_icon"></div>
-          <div class="footer_icon"></div>
+          <div class="row">
+            <div class="footer_info">
+              <div class="info_word">王者之劍部隊</div>
+              <div class="info_word">ffxvinsomnia@gmail.com</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

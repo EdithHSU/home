@@ -45,29 +45,18 @@ body
         .row
           .title 茶會資訊
         .row
-          .col-sm-2.col-xs-12
+          .col-sm-1.col-xs-12
           .col-sm-4.col-xs-12
             .content_normal
               li 時間：11/24 (六) ｜ 13:00~16:00
               li 地點：SingleInn單人房 台北展演中心
               li 人數：20~25人
               li 價錢：650元 / 人
-          .col-sm-4.col-xs-12
+          .col-sm-6.col-xs-12
             #map
-            script.
-              function initMap() {
-                var uluru = {lat: -25.363, lng: 131.044};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 4,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
-              }
-            script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwd7L4fjLh6_wBPKwchSNRWYfGEehJ7bc&callback=initMap")
-          .col-sm-2.col-xs-12
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6932591691284!2d121.4568383150647!3d25.010536883983402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a81d1059ec95%3A0x9acc811cc4ac8503!2zU2luZ2xlSW5uIOWWruS6uuaIv-WPsOWMl-mkqO-8iOmjr-W6l-aXhemkqO-8iQ!5e0!3m2!1szh-TW!2stw!4v1534945846547", allowfullscreen)
+
+          .col-sm-1.col-xs-12
 
     section#note.content
       .container
@@ -83,11 +72,14 @@ body
     section#footer
       .container
         .col-sm-6.col-xs-12
-          .footer_logo
-            .logo_word FINALFANTASY XV 
-            .logo_word FESTIVAL
+          .row
+            .footer_logo
+              .logo_word FINALFANTASY XV 
+              .logo_word FESTIVAL
         .col-sm-6.col-xs-12
-          .footer_icon
-          .footer_icon
-          .footer_icon
+          .row
+            .footer_info
+              .info_word 王者之劍部隊
+              .info_word ffxvinsomnia@gmail.com
+
 
