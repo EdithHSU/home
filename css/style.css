@@ -3,9 +3,6 @@
   font-family: "微軟正黑體"; }
 
 body {
-  background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #1d86ff; }
 
 a {
@@ -15,29 +12,74 @@ a {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold; }
 
+p {
+  font-size: 14px; }
+
 nav.navbar {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
-
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
-  background-color: transparent; }
-  nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  nav.navbar a {
     color: white;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+    nav.navbar a:hover {
       color: #1d86ff; }
 
 section {
-  padding: 50px 0; }
+  min-height: 300px;
+  padding: 80px 0; }
   section .row {
-    margin-top: 60px; }
+    margin-top: 30px; }
     @media (max-width: 984px) {
       section .row {
         margin-top: 30px;
         margin: 30px 0 0 0; } }
+
+.banner {
+  background-color: #ababab;
+  color: #fff;
+  padding-top: 80px; }
+  .banner .title {
+    font-size: 75px;
+    font-weight: 900; }
+  .banner .detail {
+    font-size: 26px; }
+
+.content {
+  color: #333;
+  line-height: 27px; }
+  .content .title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 27px;
+    text-align: center;
+    padding-bottom: 40px; }
+  .content .content_outline {
+    text-align: center;
+    padding: 25px;
+    border: solid 1px #1d86ff;
+    line-height: 27px; }
+  .content .content_normal {
+    padding: 25px; }
+    .content .content_normal li {
+      padding: 10px 0; }
+
+.list {
+  background-color: #333;
+  min-height: 0;
+  padding: 10px 0; }
+  .list a {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .list .nav > li > a:focus, .list .nav > li > a:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    color: #fff;
+    background-color: #333; }
 
 header.jumbotron {
   background-image: url(http://www.shuoyangdesign.com/blog/wp-content/uploads/2016/05/20141015153123463-450x300.jpg);
@@ -54,6 +96,12 @@ header.jumbotron {
   header.jumbotron h4 {
     color: rgba(255, 255, 255, 0.5);
     font-weight: normal; }
+
+section#welcome {
+  background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #1d86ff; }
 
 .background_mask {
   background-color: rgba(255, 255, 255, 0.7);
@@ -186,71 +234,67 @@ header.jumbotron {
   margin-top: 100px;
   text-align: center; }
 
-section#section_ask {
-  background-color: #1d86ff; }
-  section#section_ask .col-sm-5.img {
-    background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg");
-    height: 350px;
-    mix-blend-mode: multiply;
-    background-size: cover; }
-  section#section_ask h2 {
-    margin-top: 130px;
-    padding: 0px 20px; }
+section#intro {
+  background-color: #f6f6f6; }
+  section#intro .map {
+    background-color: #333;
+    width: 100%;
+    height: 300px; }
 
-section#section_about img {
-  width: 130%; }
+section#footer {
+  min-height: 0;
+  background-color: #333;
+  padding: 40px 0; }
+  section#footer .footer_logo .logo_word {
+    font-weight: 900;
+    font-size: 20px; }
+  section#footer .footer_icon {
+    background-color: #f7f7f7;
+    display: inline-block;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px; }
+    @media (max-width: 500px) {
+      section#footer .footer_icon {
+        float: left;
+        margin: 20px 20px 0 0; } }
 
-section#section_about .img_wrap {
-  height: 220px;
-  overflow: hidden; }
+section#detail {
+  background-color: #f6f6f6; }
 
-section#section_story {
-  background-color: #222;
-  color: white;
-  padding: 0; }
-  section#section_story .col-sm-5 {
-    background-image: url(https://stutzfamily.com/mrstutz/Maps/USHistory/europe1938.gif);
-    background-size: 100% auto;
-    height: 400px; }
-    section#section_story .col-sm-5 .cross {
-      position: absolute;
-      left: 23%;
-      top: 40%;
-      color: red;
-      font-size: 30px;
-      font-weight: bold; }
-  section#section_story .col-sm-7 {
-    text-align: center; }
-    section#section_story .col-sm-7 i {
-      font-size: 40px; }
-  section#section_story .col-sm-12.features {
-    margin-top: 40px;
-    margin-bottom: 40px; }
+section#schedule h5 {
+  font-weight: 100;
+  margin-bottom: 5px;
+  color: #1d86ff; }
 
-section#section_future img {
-  width: 100%; }
+section#menu {
+  background-color: #f6f6f6; }
 
-section#section_future i {
-  font-size: 30px; }
-
-section#section_future .feature {
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-footer.jumbotron {
-  background-image: url(http://www.shuoyangdesign.com/blog/wp-content/uploads/2016/05/20141015153123463-450x300.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  text-align: center;
-  margin-bottom: 0; }
-  footer.jumbotron input {
-    background-color: transparent;
-    max-width: 350px;
-    margin-left: auto;
-    margin-right: auto; }
-  footer.jumbotron .container {
-    padding: 60px 0;
-    color: white; }
-  footer.jumbotron hr {
-    max-width: 50px;
-    border: solid 2px #1d86ff; }
+#news {
+  min-height: 85vh;
+  background-color: #ababab; }
+  #news section#info {
+    color: #fff; }
+    #news section#info .info_outline {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 250px;
+      padding: 20px;
+      border: solid 2px #fff; }
+    #news section#info .social_outline {
+      position: relative;
+      width: 100%;
+      height: 250px; }
+      #news section#info .social_outline .social {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-left: 0;
+        text-align: right; }
+        #news section#info .social_outline .social .item {
+          width: 50px;
+          margin-right: 0;
+          margin-left: 40px; }
+  #news section#footer {
+    min-height: 16vh; }

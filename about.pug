@@ -1,0 +1,93 @@
+html(lang='en')
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset='UTF-8')
+    title Final FantasyXV Festival
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+
+
+block body_navigation
+  include navigation     
+body
+  #about
+    section.banner
+      .container
+        .title ABOUT
+        .detail 關於茶會
+
+    section.list.hidden-xs
+      .container
+        ul.nav.navbar-nav
+            li
+              a(style="padding-left: 0", href="#theam") 茶會主題
+            li
+              a(href="#map") 茶會資訊
+            li
+              a(href="#note") 注意事項
+
+
+    section#theam.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title FINALFANTASY XV FESTIVEL！！
+            .content_outline
+              p FFXV發行已經二周年了！！ 讓我們一起來舉辦慶典一起同樂吧！
+              p 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
+              p 一同來一場輕鬆愜意的水都嘉年華~★
+
+    section#intro.content
+      .container
+        .row
+          .title 茶會資訊
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-4.col-xs-12
+            .content_normal
+              li 時間：11/24 (六) ｜ 13:00~16:00
+              li 地點：SingleInn單人房 台北展演中心
+              li 人數：20~25人
+              li 價錢：650元 / 人
+          .col-sm-4.col-xs-12
+            #map
+            script.
+              function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }
+            script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwd7L4fjLh6_wBPKwchSNRWYfGEehJ7bc&callback=initMap")
+          .col-sm-2.col-xs-12
+
+    section#note.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title 注意事項
+            .content_normal
+              li FFXV發行已經二周年了！！ 讓我們一起來舉辦慶典一起同樂吧！
+              li 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
+              li 一同來一場輕鬆愜意的水都嘉年華~★
+
+    section#footer
+      .container
+        .col-sm-6.col-xs-12
+          .footer_logo
+            .logo_word FINALFANTASY XV 
+            .logo_word FESTIVAL
+        .col-sm-6.col-xs-12
+          .footer_icon
+          .footer_icon
+          .footer_icon
+

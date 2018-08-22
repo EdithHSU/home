@@ -12,9 +12,6 @@ $screen-sm: 768px
   // section#section_future
   //   display: block
 body
-  background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg")
-  background-size: cover
-  background-repeat: no-repeat
   color: $color_main
   // height: 1000px
 a
@@ -22,22 +19,63 @@ a
   text-decoration: none
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
   font-weight: bold
+p
+  font-size: 14px
 nav.navbar
   transition: 0.5s
-nav.navbar.navbar-default.navbar-fixed-top.navbar-top
-  background-color: transparent
   a
     color: white
     transition: 0.5s
     &:hover
       color: $color_main
 section
-  padding: 50px 0
+  min-height: 300px
+  padding: 80px 0
   .row
-    margin-top: 60px
+    margin-top: 30px
     @media (max-width: 984px)
       margin-top: 30px
       margin: 30px 0 0 0
+.banner
+  background-color: #ababab
+  color: #fff
+  padding-top: 80px
+  .title
+    font-size: 75px
+    font-weight: 900
+  .detail
+    font-size: 26px
+.content
+  color: #333
+  line-height: 27px
+  .title
+    font-size: 24px
+    font-weight: 900
+    line-height: 27px
+    text-align: center
+    padding-bottom: 40px
+  .content_outline
+    text-align: center
+    padding: 25px
+    border: solid 1px $color_main
+    line-height: 27px
+  .content_normal
+    padding: 25px
+    li
+      padding: 10px 0
+.list
+  background-color: #333
+  min-height: 0
+  padding: 10px 0
+  a
+    transition: 0.2s
+  .nav>li>a:focus, .nav>li>a:hover
+    transition: 0.2s
+    color: #fff
+    background-color: #333
+
+
+
 
 // 01.header.jumbotron設定
 header.jumbotron
@@ -56,6 +94,10 @@ header.jumbotron
     color: rgba(white,0.5)
     font-weight: normal
 section#welcome
+  background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  color: $color_main
 .background_mask
   background-color: rgba(255, 255, 255, 0.7)
   width: 80%
@@ -169,71 +211,73 @@ section#welcome
   margin-top: 100px
   text-align: center
 
-// 02.section#section_ask設定
-section#section_ask
-  background-color: #1d86ff
-  .col-sm-5.img
-    background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg")
-    height: 350px
-    mix-blend-mode: multiply
-    background-size: cover
-  h2
-    margin-top: 130px
-    padding: 0px 20px
-// 03.section#section_about設定
-section#section_about
-  img
-    width: 130%
-  .img_wrap
-    height: 220px
-    overflow: hidden
-// 04.section#section_story設定
-section#section_story
-  background-color: #222
-  color: white
-  padding: 0
-  .col-sm-5
-    background-image: url(https://stutzfamily.com/mrstutz/Maps/USHistory/europe1938.gif)
-    background-size: 100% auto
-    height: 400px
-    .cross
-      position: absolute
-      left: 23%
-      top: 40%
-      color: red
-      font-size: 30px
-      font-weight: bold
-  .col-sm-7
-    text-align: center
-    i
-      font-size: 40px
-  .col-sm-12.features
-    margin-top: 40px
-    margin-bottom: 40px
-// 05.section#section_future設定
-section#section_future
-  img
+
+section#intro
+  background-color: #f6f6f6
+  .map
+    background-color: #333
     width: 100%
-  i
-    font-size: 30px
-  .feature
-    padding-top: 10px
-    padding-bottom: 10px
-// 06.footer.jumbotron設定
-footer.jumbotron
-  background-image: url(http://www.shuoyangdesign.com/blog/wp-content/uploads/2016/05/20141015153123463-450x300.jpg)
-  background-size: cover
-  background-attachment: fixed
-  text-align: center
-  margin-bottom: 0
-  input
-    background-color: transparent
-    max-width: 350px
-    margin-left: auto
-    margin-right: auto
-  .container
-    padding: 60px 0
-    color: white
-  hr
-    max-width: 50px
-    border: solid 2px #1d86ff
+    height: 300px
+
+section#footer
+  min-height: 0
+  background-color: #333
+  padding: 40px 0
+  .footer_logo
+    .logo_word
+      font-weight: 900
+      font-size: 20px
+  .footer_icon
+    background-color: #f7f7f7
+    display: inline-block
+    float: right
+    width: 32px
+    height: 32px
+    margin-left: 20px
+    @media (max-width: 500px)
+      float: left
+      margin: 20px 20px 0 0
+
+
+
+section#detail
+  background-color: #f6f6f6
+
+
+section#schedule
+  h5
+    font-weight: 100
+    margin-bottom: 5px
+    color: $color_main
+
+section#menu
+  background-color: #f6f6f6
+
+#news
+  min-height: 85vh
+  background-color: #ababab
+  section#info
+    color: #fff
+    .info_outline
+      background-color: rgba(0, 0, 0, 0.6)
+      width: 100%
+      height: 250px
+      padding: 20px
+      border: solid 2px #fff
+    .social_outline
+      position: relative
+      width: 100%
+      height: 250px
+      .social
+        position: absolute
+        right: 0
+        bottom: 0
+        padding-left: 0
+        text-align: right
+        .item
+           width: 50px
+           margin-right: 0
+           margin-left: 40px
+
+  section#footer
+    min-height: 16vh

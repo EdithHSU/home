@@ -1,0 +1,83 @@
+html(lang='en')
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset='UTF-8')
+    title Final FantasyXV Festival
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+
+block body_navigation
+  include navigation     
+body
+  #about
+    section.banner
+      .container
+        .title ACTIVITY
+        .detail 活動內容
+
+    section.list.hidden-xs
+      .container
+        ul.nav.navbar-nav
+            li
+              a(style="padding-left: 0", href="#schedule") 活動流程表
+            li
+              a(href="#menu") 活動餐點
+            li
+              a(href="#goods") 活動周邊
+
+
+    section#schedule.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title 活動流程表
+            .content_outline
+              h5 13:00～13:30
+              p 一般入場 free time
+              h5 13:30～14:00
+              p 茶會開始 播放倒數影片 free time
+              h5 14:00～14:30
+              p 茶會注意事項宣導 free time
+              h5 14:30～15:00
+              p 團康遊戲-猜謎遊戲
+              h5 15:00～15:30
+              p 團康遊戲-賭博遊戲
+              h5 15:30～16:00
+              p 團康遊戲-借物賽
+              h5 16:00～17:00
+              p 大合照 快樂回家 free time
+
+    section#menu.content
+      .container
+        .row
+          .title 活動餐點
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .content_normal(style="text-align: center")
+              h4 Coming soon...
+
+
+
+    section#goods.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title 活動周邊
+            .content_normal(style="text-align: center")
+              h4 Coming soon... 
+
+    section#footer
+      .container
+        .col-sm-6.col-xs-12
+          .footer_logo
+            .logo_word FINALFANTASY XV 
+            .logo_word FESTIVAL
+        .col-sm-6.col-xs-12
+          .footer_icon
+          .footer_icon
+          .footer_icon
