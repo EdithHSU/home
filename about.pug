@@ -13,13 +13,16 @@ block body_navigation
   include navigation     
 body
   #about
-    section.banner
+    section.banner(style="padding-bottom: 0")
       .container
-        .title ABOUT
-        .detail 關於茶會
+        .row.animated.fadeInUp
+          .title ABOUT
+          .detail 關於茶會
+        .row
+          .bit
 
     section.list.hidden-xs
-      .container
+      .container(style="padding-left: 0")
         ul.nav.navbar-nav
             li
               a(style="padding-left: 0", href="#theam") 茶會主題
@@ -32,13 +35,16 @@ body
     section#theam.content
       .container
         .row
-          .col-sm-2.col-xs-12
+          .col-sm-2.col-xs-12.hidden-xs
+            .img(style="text-align: right")
           .col-sm-8.col-xs-12
             .title FINALFANTASY XV FESTIVEL！！
             .content_outline
               p FFXV發行已經二周年了！！ 讓我們一起來舉辦慶典一起同樂吧！
               p 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
               p 一同來一場輕鬆愜意的水都嘉年華~★
+          .col-sm-2.col-xs-12.hidden-xs
+            .img(style="background-image: url('https://edithhsu.github.io/home/Images/moguli.png')")
 
     section#intro.content
       .container
@@ -50,7 +56,7 @@ body
             .content_normal
               li 時間：11/24 (六) ｜ 13:00~16:00
               li 地點：SingleInn單人房 台北展演中心
-              li 人數：20~25人
+              li 人數：36人
               li 價錢：650元 / 人
           .col-sm-6.col-xs-12
             #map
@@ -65,7 +71,7 @@ body
           .col-sm-8.col-xs-12
             .title 注意事項
             .content_normal
-              li FFXV發行已經二周年了！！ 讓我們一起來舉辦慶典一起同樂吧！
+              li 本次活動不開放來賓cosplay
               li 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
               li 一同來一場輕鬆愜意的水都嘉年華~★
 

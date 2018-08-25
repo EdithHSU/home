@@ -11,11 +11,14 @@ html(lang='en')
 block body_navigation
   include navigation     
 body
-  #about
-    section.banner
+  #join
+    section.banner(style="padding-bottom: 0")
       .container
-        .title JOIN
-        .detail 參加茶會
+        .row
+          .title JOIN
+          .detail 參加茶會
+        .row
+          .bit
 
     section.list.hidden-xs
       .container
@@ -25,7 +28,7 @@ body
             li
               a(href="#detail") 報名資訊
             li
-              a(href="#hire") 來賓入取名單
+              a(href="#hire") 來賓錄取名單
 
 
     section#now.content
